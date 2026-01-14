@@ -1,0 +1,42 @@
+.navbar {
+    background-color:#0D0221;
+    border-bottom: 5px solid;
+    border-color: #241734;
+    padding: 1rem;
+} 
+
+.container {
+  margin: 3rem auto;
+  width: 500px;
+  overflow: auto;
+  padding: 3rem 2rem;
+  background-color: #DCD0FF; ;
+  border-radius: 2%;
+  border: 2px solid;
+  border-color: #241734;
+}
+
+
+form {
+    display: table; /*grid*/
+    gap: 10px; /* Väli rivien välillä */
+    max-width: 400px;
+}
+
+label {
+    text-align: right; /* Labelit oikealle */
+    padding-right: 10px;
+}
+
+input[type="text"], textarea, select {
+    width: 100%;
+    background-color: none;
+}
+
+input[type="radio"] {
+    display: inline;
+}
+
+.virhe {
+    color: orangered;
+}
