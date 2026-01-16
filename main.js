@@ -86,6 +86,11 @@ function lomakkeenValidointi() {
 
         document.getElementById("käyttäjäid-virhe").textContent = "Käyttäjä ID on pakollinen!";
         document.getElementById("käyttäjäid-virhe").style.display = "block";
+    } else if (käyttäjäid.length < 6) {
+        onValidi = false;
+
+        document.getElementById("käyttäjäid-virhe").textContent = "Käyttäjä ID on liian lyhyt!";
+        document.getElementById("käyttäjäid-virhe").style.display = "block";
     }
 
     if (postinro.length !== 5) {
@@ -106,4 +111,7 @@ function resetoiVirheet() {
     document.getElementById("salasana-virhe").textContent = "";
     document.getElementById("käyttäjäid-virhe").textContent = "";
     document.getElementById("postinro-virhe").textContent = "";
+    document.getElementById("maa-virhe").textContent = "";
+    document.getElementById("sukupuoli-virhe").textContent = "";
+    document.getElementById("kieli-virhe").textContent = "";
 }
